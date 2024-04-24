@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMS</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <img src="university_logo.png" alt="University Logo" class="logo">
+        <div id="form-toggle">
+            <button onclick="toggleForm()">Switch to Login</button>
+        </div>
+        <h2 id="signup-heading">Sign Up</h2>
+        <form id="signup-form">
+            <input type="text" id="fullname" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+            <select id="role" required>
+                <option value="" disabled selected>Select Role</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="office">Office</option>
+                <option value="administrator">Administrator</option>
+            </select>
+            <button type="submit">Sign Up</button>
+        </form>
+        
+        <h2 id="login-heading" style="display:none;">Login</h2>
+        <form id="login-form" action="login.html" method="POST" onsubmit="login(event)">
+            <input type="email" id="login-email" placeholder="Email Address" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <select id="login-role" required>
+                <option value="" disabled selected>Select Role</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="office">Office</option>
+                <option value="administrator">Administrator</option>
+            </select>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+<script src="login.js"></script>
+</html>

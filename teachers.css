@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background: white;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('dept.jpg') center/cover no-repeat;
+    filter: blur(0.12px);
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background: #ffffff;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+h1, p {
+    color: black;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow boxes to wrap to the next line */
+}
+
+.box {
+    width: calc(33.33% - 20px); /* Adjust box width to fit three boxes per row with 20px margin between them */
+    height: 200px; /* Increase box height to accommodate content */
+    margin: 10px;
+    color: #fff;
+    text-align: center;
+    background-color: rgb(24, 149, 13);
+    line-height: 200px;
+    transition: background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: #00b303;
+}
+footer {
+    position: absolute; /* Position the footer relative to the body */
+    bottom: 0; /* Pin the footer to the bottom */
+    width: 100%; /* Make the footer span the entire width */
+    background: #ffffff;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
